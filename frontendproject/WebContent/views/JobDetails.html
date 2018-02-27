@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body ng-app="cell">
+<div ng-Controller="EmployeeController">
+<table>
+<thead>
+<tr>
+<th>EID</th>
+<th>Ename</th>
+<th>Department</th>
+<th>Salary</th>
+<th>DOB</th>
+</thead>
+<tbody>
+<tr ng-repeat="e in employees">
+<td>{{e.eid}}</td>
+<td>{{e.ename}}</td>
+<td>{{e.department}}</td>
+<td>{{e.salary}}</td>
+<td>{{e.dob}}</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+
+
+</body>
+
+<script type="text/javascript">src="https://ajax.googleis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+
+<script type="text/javascript"src="../js/app.js"></script>
+
+<script type="text/javascript"src="../Controller/EmployeeController.js"></script>
+
+<script type="text/javascript"src="../Services/EmployeeService.js"></script>
+
+</html>
